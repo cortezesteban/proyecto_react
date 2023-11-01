@@ -1,0 +1,34 @@
+.navBarStyle {
+    background: rgba(0, 0, 0, 0.415);
+    width: 100%;
+}
+
+.navStyle .btnNavBarStyle,
+.dropdown-toggle::after {
+    color: white;
+    transition: 0.5s;
+}
+
+.navStyle .btnNavBarStyle:hover {
+    color: orange;
+}
+
+.imagenLogo {
+    width: 45px;
+    height: 45px;
+}
+
+.nameStyle{
+    font-size: 1.1rem;
+    margin-left: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.nameTwoStyle{
+    color: rgb(86, 151, 166);
+}
+
+
+
+
