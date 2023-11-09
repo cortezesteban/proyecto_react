@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './ButtonComponent.css';
 
 const ButtonComponent = ({accion, estilo, nombre}) => {
   return (
