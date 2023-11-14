@@ -19,6 +19,12 @@
     color: white;
 }
 
+.h3Tittle {
+    font-size: 1rem;
+    color: white;
+    font-family: Poppins, sans-serif;
+}
+
 .h4Style {
     margin-left: 10px;
     margin-right: 3px;

@@ -1,0 +1,15 @@
+.navStyle .btnNavBarStyle,
+.dropdown-toggle::after {
+    color: white;
+    transition: 0.5s;
+}
+
+.navStyle .btnNavBarStyle:hover {
+    color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+    .formStyle{
+        margin: .5rem;
+    }
+  }

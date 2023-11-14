@@ -3,3 +3,51 @@
     margin-right: 0.5rem;
     margin-left: 1rem;
 }
+
+.contenedorFlex{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.colContenedor{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.primeraImagen{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: transform .3s;
+    border-radius: 10px;
+}
+
+.primeraImagen:hover{
+    z-index: 2;
+    transform: scale(1.05,1.05);
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: transform .3s;
+    border-radius: 10px;
+}
+
+.video:hover{
+    z-index: 3;
+    transform: scale(1.05,1.05);
+}
+
+.nombrePrecioContenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

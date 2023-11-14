@@ -1,11 +1,13 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
-import {Nav, Navbar, NavDropdown, Form, Button} from 'react-bootstrap';
+import {Nav, Navbar} from 'react-bootstrap';
+import { NavLinkComponent } from '../NavLinkComponent/NavLinkComponent';
+
 import imagenLogo from '../../assets/img/logo_juego.png';
 import CartWidget from '../CartWidget/CartWidget';
 import './NavBarComponent.css';
 
-const NavBarComponent = ({contador}) => {
+export const NavBarComponent = ({contador}) => {
   return (
       <Navbar expand="lg" className="navBarStyle" data-bs-theme="dark">
           <Container fluid className="w-100">
@@ -19,17 +21,7 @@ const NavBarComponent = ({contador}) => {
                     <Container fluid>
                         <Row>
                             <Col sm={10} className='d-flex justify-content-center align-items-center navMovileStyle'>
-                                <Nav.Link href="#home" className="btnNavBarStyle">INICIO</Nav.Link>
-                                <Nav.Link href="#home" className="btnNavBarStyle">ANALISIS</Nav.Link>
-                                <Nav.Link href="#home" className="btnNavBarStyle">AVANCES</Nav.Link>
-                                <NavDropdown title={<span className="btnNavBarStyle">CATEGORIA</span>} id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Estrategia</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Accion</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Rol</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Aventura</NavDropdown.Item>
-                                </NavDropdown>
-                                <Form.Control type="text" placeholder="Nombre de Juego" className='formStyle'/>
-                                <Button type="submit" className='btn-dark'>Buscar</Button>
+                                <NavLinkComponent/>
                             </Col>
                             <Col sm={2} className='d-flex justify-content-end align-content-center cartMovileStyle'>
                                 <CartWidget contador={contador}/>
@@ -42,5 +34,3 @@ const NavBarComponent = ({contador}) => {
       </Navbar>
   );
 }
-
-export default NavBarComponent;
