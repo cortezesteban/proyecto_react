@@ -1,4 +1,3 @@
-import imagen from '../../assets/img/street_fighter_6.jpg';
 import './ImageComponent.css';
 
 export const ImageComponent = ({juego}) => {
