@@ -6,7 +6,6 @@ import { obtenerJuegos } from "../services/apiJuegos"
 export const Item = () => {
 
   const [juego, setJuego] = useState({});
-
   const { id } = useParams();
 
   useEffect(() => {

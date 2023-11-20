@@ -10,7 +10,7 @@
 
 .h1Style {
     color: white;
-    margin: 10px;
+    margin-left: 2rem;
     font-size: 30px;
 }
 
@@ -18,28 +18,32 @@
     margin-left: 10px;
     margin-right: 3px;
     font-size: 1rem;
+    color: white;
 }
 
-.h2Tittle {
+.h1Tittle {
     font-size: 3rem;
     color: white;
 }
 
+.h2Tittle {
+    font-size: 2.5rem;
+    color: white;
+}
+
 .h3Tittle {
-    font-size: 1rem;
+    font-size: 2rem;
     color: white;
     font-family: Poppins, sans-serif;
 }
 
 .h4Tittle{
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
 }
 
 p{
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: justify;
     color: white;
 }

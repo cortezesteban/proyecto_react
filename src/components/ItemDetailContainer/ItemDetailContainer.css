@@ -1,0 +1,78 @@
+.containerDetailStyle {
+    position: relative;
+    display: flex;
+}
+
+.imgBackStyle {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: center top;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+}
+
+.detailStyle{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    height: 400px;
+    top: 20%;
+    left: 10%;
+}
+
+.imgFrontStyle{
+    width: 600px;
+    height: 350px;
+    top: 40%;
+    left: 10%;
+    border-radius: 5px;
+}
+
+.infoJuegoStyle{
+    width: 40%;
+    height: 80%;
+    margin: 0 0;
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.containerDescription{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+}
+
+.btnDetailStyle{
+    border-radius: 8px;
+    padding: 8px 30px;
+    background: #31363a;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnDetailStyle:hover{
+    background: rgb(203, 140, 22);
+}
+
+.spanDetailStyle{
+    color: rgb(86, 151, 166);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .detailStyle{
+        flex-direction: column;
+    }
+  }
+

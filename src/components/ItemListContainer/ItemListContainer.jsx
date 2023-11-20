@@ -16,23 +16,23 @@ export const ItemListContainer = ({ listaJuegos, genero }) => {
 
   return (
     <div>
-      <p className='h4Tittle fw-bold'>
-        {genero == null ? 'Lista de Juegos' : `Genero ${genero}`}
-      </p>
+      <h3 className='h3Tittle fw-bold titleListItem'>
+        {genero == null ? 'Lista de Juegos' : `${genero}`}
+      </h3>
       <div className="contenedorFlex">
         {
           listaJuegos.map((juego) => {
             return (
               <div key={juego.id} className="colContenedor">
                 <Link to={`/item/${juego.id}`}>
-                  <img src={juego.imagen} className="primeraImagen" id={juego.nombre.replace(/\s+/g, '')} />
+                  <img src={juego.imagenPequeña} className="primeraImagen" id={juego.nombre.replace(/\s+/g, '')} />
                   <video src={juego.video} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} type="video/mp4" muted
                     id={juego.nombre.replace(/\s+/g, '')} className="video" loop>
                   </video>
                 </Link>
                 <div className='nombrePrecioContenedor m-2'>
-                  <h2 className='h3Tittle'>{juego.nombre}</h2>
-                  <h3 className='h3Tittle'>${juego.precio}</h3>
+                  <p>{juego.nombre}</p>
+                  <h3 className='h4Style'>${juego.precio}</h3>
                 </div>
               </div>
             )
