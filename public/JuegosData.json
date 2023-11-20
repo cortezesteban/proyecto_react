@@ -5,8 +5,8 @@
       "precio": 430,
       "empresa": "Ubisoft",
       "genero": "Disparos",
-      "imagen": "./src/assets/img/call_of_duty.webp",
-      "video": "./src/assets/videos/call_of_duty_iii.mp4",
+      "imagen": "../src/assets/img/call_of_duty.webp",
+      "video": "../src/assets/videos/call_of_duty_iii.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -15,8 +15,8 @@
       "precio": 480,
       "empresa": "Ubisoft",
       "genero": "Supervivencia",
-      "imagen": "./src/assets/img/7_days_to_die.webp",
-      "video": "./src/assets/videos/7_days_to_die.mp4",
+      "imagen": "../src/assets/img/7_days_to_die.webp",
+      "video": "../src/assets/videos/7_days_to_die.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -25,8 +25,8 @@
       "precio": 460,
       "empresa": "Ubisoft",
       "genero": "Aventura",
-      "imagen": "./src/assets/img/assassing_cred_odissey.jpg",
-      "video": "./src/assets/videos/assassin_creed_odyssey.mp4",
+      "imagen": "../src/assets/img/assassing_cred_odissey.jpg",
+      "video": "../src/assets/videos/assassin_creed_odyssey.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -35,8 +35,8 @@
       "precio": 510,
       "empresa": "Ubisoft",
       "genero": "Disparos",
-      "imagen": "./src/assets/img/battlefield_4.jpg",
-      "video": "./src/assets/videos/battlefield_4.mp4",
+      "imagen": "../src/assets/img/battlefield_4.jpg",
+      "video": "../src/assets/videos/battlefield_4.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -45,8 +45,8 @@
       "precio": 430,
       "empresa": "Ubisoft",
       "genero": "Rol",
-      "imagen": "./src/assets/img/diablo_4.jpg",
-      "video": "./src/assets/videos/diablo_4.mp4",
+      "imagen": "../src/assets/img/diablo_4.jpg",
+      "video": "../src/assets/videos/diablo_4.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -55,8 +55,8 @@
       "precio": 430,
       "empresa": "Ubisoft",
       "genero": "Supervivencia",
-      "imagen": "./src/assets/img/valheim.jpg",
-      "video": "./src/assets/videos/valheim.mp4",
+      "imagen": "../src/assets/img/valheim.jpg",
+      "video": "../src/assets/videos/valheim.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -65,8 +65,8 @@
       "precio": 430,
       "empresa": "Ubisoft",
       "genero": "Rol",
-      "imagen": "./src/assets/img/new_world.jpg",
-      "video": "./src/assets/videos/new_world.mp4",
+      "imagen": "../src/assets/img/new_world.jpg",
+      "video": "../src/assets/videos/new_world.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -75,8 +75,8 @@
       "precio": 430,
       "empresa": "Ubisoft",
       "genero": "Aventura",
-      "imagen": "./src/assets/img/dead_red_redemption_2.jpg",
-      "video": "./src/assets/videos/red_dead_redemption_ii.mp4",
+      "imagen": "../src/assets/img/dead_red_redemption_2.jpg",
+      "video": "../src/assets/videos/red_dead_redemption_ii.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -85,8 +85,8 @@
       "precio": 430,
       "empresa": "Ubisoft",
       "genero": "Estrategia",
-      "imagen": "./src/assets/img/factorio.jpg",
-      "video": "./src/assets/videos/factorio.mp4",
+      "imagen": "../src/assets/img/factorio.jpg",
+      "video": "../src/assets/videos/factorio.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     },
     {
@@ -94,9 +94,9 @@
       "nombre": "Age of Empire III",
       "precio": 430,
       "empresa": "Ubisoft",
-      "genero": "Disparos",
-      "imagen": "./src/assets/img/age_of_empire_iii.jpeg",
-      "video": "./src/assets/videos/age_of_empire_iii.mp4",
+      "genero": "Estrategia",
+      "imagen": "../src/assets/img/age_of_empire_iii.jpeg",
+      "video": "../src/assets/videos/age_of_empire_iii.mp4",
       "descripcion": "Call of Duty: Modern Warfare III de Sledgehammer Games es el Call of Duty de 2023. Sigue la historia de Modern Warfare 2 (2022), es decir, el tercer episodio del reinicio de Modern Warfare. No es por tanto un remake de Modern Warfare 3 de 2011. La campaña nos lleva a perseguir al terrorista global Vladimir Makarov, quien está dispuesto a iniciar la Tercera Guerra Mundial. El estilo de juego es similar a los últimos Modern Warfare"
     }
   ]

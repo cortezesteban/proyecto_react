@@ -1,7 +1,8 @@
 import React from 'react'
-import {Container, Row, Col} from 'react-bootstrap';
-import {Nav, Navbar} from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { NavLinkComponent } from '../NavLinkComponent/NavLinkComponent';
+import { Link } from 'react-router-dom';
 
 import imagenLogo from '../../assets/img/logo_juego.png';
 import CartWidget from '../CartWidget/CartWidget';
@@ -11,9 +12,11 @@ export const NavBarComponent = ({contador}) => {
   return (
       <Navbar expand="lg" className="navBarStyle" data-bs-theme="dark">
           <Container fluid className="w-100">
-              <Navbar.Brand href="#home" className="text-white">
-                  <img src={imagenLogo} alt="" className="imagenLogo" />
+              <Navbar.Brand>
+                <Link to={'/'} className='link'>
+                  <img src={imagenLogo} alt="" className="imagenLogo"/>
                   <span className="nameStyle">INFINITE<span className="nameTwoStyle">GAME</span></span>
+                </Link>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-secondary bg-gradient" />
               <Navbar.Collapse id="basic-navbar-nav">
