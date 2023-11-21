@@ -16,7 +16,7 @@ export const ItemListContainer = ({ listaJuegos, genero }) => {
 
   return (
     <div>
-      <h3 className='h3Tittle fw-bold titleListItem'>
+      <h3 className={`h3Tittle fw-bold ${genero == null ? 'titleListStyle' : 'titleCategoryStyle'}`}>
         {genero == null ? 'Lista de Juegos' : `${genero}`}
       </h3>
       <div className="contenedorFlex">

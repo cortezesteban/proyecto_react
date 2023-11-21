@@ -4,9 +4,20 @@
     margin-left: 1rem;
 }
 
-.titleListItem{
-    width: 90%;
+.titleCategoryStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 0px auto 20px auto;
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.415),rgba(83, 88, 90, 0))
+                
+}
+
+.titleListStyle{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .contenedorFlex{

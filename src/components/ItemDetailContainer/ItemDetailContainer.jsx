@@ -5,7 +5,7 @@ export const ItemDetailContainer = ({ juego }) => {
   return (
     <div>
       <div className='containerDetailStyle'>
-        <img src={juego?.imagenGrande} alt="" className='imgBackStyle'></img>
+        <img src={juego?.imagenGrande} className='imgBackStyle'></img>
         <div className='detailStyle'>
           <img src={juego?.imagenPequeña} className='imgFrontStyle'></img>
           <div className='infoJuegoStyle'>
