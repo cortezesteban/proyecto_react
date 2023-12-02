@@ -1,20 +1,23 @@
 import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer"
-import { obtenerJuegos } from "../services/apiJuegos"
+import { useSingleGame } from "../hooks/useGames"
 
 export const Item = () => {
 
-  const [juego, setJuego] = useState({});
   const { id } = useParams();
 
-  useEffect(() => {
-    obtenerJuegos()
-        .then((res) => setJuego(res.data.find(juego => juego.id == id)))
-        .catch((err) => console.log(err));
-  }, [id])
-  
+  const { juego, loading, error } = useSingleGame(id);
+
   return (
-   <ItemDetailContainer juego={juego}/>
+    <div>
+      {loading ? (
+        <h1 className="text-white display-6 d-flex justify-content-center align-items-center">va snipet de carga</h1>
+      ) : error ? (
+        <div>Hubo un error</div>
+      ) : (
+        <ItemDetailContainer juego={juego} />
+      )}
+    </div>
   )
 }
