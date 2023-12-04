@@ -1,0 +1,17 @@
+.dropDownStyle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.dropDownStyle .dropDownMenuStyle{
+    min-width: 2.5rem;
+}
+
+.stockContainerStyle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+}

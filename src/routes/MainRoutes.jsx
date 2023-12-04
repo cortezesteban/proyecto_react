@@ -7,7 +7,7 @@ import { Item } from "../pages/Item";
 export const MainRoutes = () => {
   return (
     <BrowserRouter>
-        <NavBarComponent contador={0}/>
+        <NavBarComponent/>
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/category/:categoryId" element={<Category/>}/>

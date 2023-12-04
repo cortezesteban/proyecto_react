@@ -1,3 +1,4 @@
+import { ItemCount } from '../ItemCountContainer/ItemCount';
 import './ItemDetailContainer.css';
 
 export const ItemDetailContainer = ({ juego }) => {
@@ -13,7 +14,7 @@ export const ItemDetailContainer = ({ juego }) => {
             <h4 className='text-white '><span className='spanDetailStyle'>Empresa: </span>{juego?.empresa}</h4>
             <h4 className='text-white '><span className='spanDetailStyle'>Genero: </span>{juego?.genero}</h4>
             <h4 className='text-white '><span className='spanDetailStyle'>Precio: </span>${juego?.precio}</h4>
-            <button type="submit" className='btnDetailStyle'>Agregar al Carrito</button>
+            <ItemCount stock={juego.stock}/>  
           </div>
         </div>
       </div>

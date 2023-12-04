@@ -12,7 +12,7 @@ export const useAllGames = () => {
                 setTimeout(() => {
                     setListaJuegos(res.data);
                     setLoading(false);
-                  }, 3000)
+                  }, 1000)
                 })
             .catch((err) => setError(err));
     }, []);
@@ -31,7 +31,7 @@ export const useSingleGame = (id) => {
                 setTimeout(() => {
                     setJuego(res.data.find(juego => juego.id == id));
                     setLoading(false);
-                }, 3000);
+                }, 1000);
             })
             .catch((err) => setError(err));
       }, [id]);
@@ -51,7 +51,7 @@ export const useGamesByCategory = (categoryId) => {
                 setTimeout(() => {
                     setJuegosFiltrados(res.data.filter((juego) => juego.genero == categoryId));
                     setLoading(false);
-                }, 3000);
+                }, 1000);
             })
             .catch((err) => setError(err));
     }, [categoryId]);
