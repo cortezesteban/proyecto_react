@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { obtenerJuegos } from "../services/apiJuegos";
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
 
 export const useAllGames = () => {
     const [listaJuegos, setListaJuegos] = useState([]);
@@ -7,14 +8,15 @@ export const useAllGames = () => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        obtenerJuegos()
-            .then((res) => {
-                setTimeout(() => {
-                    setListaJuegos(res.data);
-                    setLoading(false);
-                  }, 1000)
-                })
-            .catch((err) => setError(err));
+        const db = getFirestore();
+
+        const gamesCollection = collection(db, 'games');
+
+        getDocs(gamesCollection).then((snapshot)=>{
+            setListaJuegos(snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })))
+        }).then(() => setLoading(false))
+        .catch((error) => setError(error))
+
     }, []);
 
     return {listaJuegos, loading, error};
