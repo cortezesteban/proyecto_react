@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { obtenerJuegos } from "../services/apiJuegos";
-import { collection, getDocs, getFirestore } from 'firebase/firestore';
+import { collection, getDocs, getFirestore, doc, getDoc, query, where, connectFirestoreEmulator } from 'firebase/firestore';
 
 export const useAllGames = () => {
     const [listaJuegos, setListaJuegos] = useState([]);
@@ -15,7 +15,7 @@ export const useAllGames = () => {
         getDocs(gamesCollection).then((snapshot)=>{
             setListaJuegos(snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })))
         }).then(() => setLoading(false))
-        .catch((error) => setError(error))
+        .catch((error) => setError(error));
 
     }, []);
 
@@ -28,14 +28,15 @@ export const useSingleGame = (id) => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        obtenerJuegos()
-            .then((res) => {
-                setTimeout(() => {
-                    setJuego(res.data.find(juego => juego.id == id));
-                    setLoading(false);
-                }, 1000);
-            })
-            .catch((err) => setError(err));
+        const db = getFirestore();
+
+        const singleGame = doc(db, 'games', id);
+
+        getDoc(singleGame).then((snapshot) => {
+            setJuego({id: snapshot.id, ...snapshot.data()})
+        }).then(() => setLoading(false))
+        .catch((error) => setError(error));
+
       }, [id]);
 
     return {juego, loading, error};
@@ -47,16 +48,43 @@ export const useGamesByCategory = (categoryId) => {
     const [error, setError] = useState(false);
 
     useEffect(() => {
-        obtenerJuegos()
-            .then((res) => {
-                setLoading(true);
-                setTimeout(() => {
-                    setJuegosFiltrados(res.data.filter((juego) => juego.genero == categoryId));
-                    setLoading(false);
-                }, 1000);
-            })
-            .catch((err) => setError(err));
+        const db = getFirestore();
+
+        const gameCollectionByCategory = query(
+            collection(db, 'games'),
+            where('genero', '==', categoryId)
+        );
+
+        getDocs(gameCollectionByCategory).then((snapshot)=>{
+            setJuegosFiltrados(snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })))
+        }).then(() => setLoading(false))
+        .catch((error) => setError(error));
+
     }, [categoryId]);
 
     return {juegosFiltrados, loading, error};
+}
+
+export const useSearchGames = (busqueda) => {
+    const [juegosBuscados, setjuegosBuscados] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(false);
+
+    useEffect(() => {
+        const db = getFirestore();
+
+        const gamesCollection = collection(db, 'games');
+
+        getDocs(gamesCollection)
+        .then((snapshot)=>{
+            setjuegosBuscados(
+                snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })).filter((e) => e.nombre.toLowerCase().includes(busqueda.toLowerCase()))
+            );
+        })
+        .then(() => setLoading(false))
+        .catch((error) => setError(error));
+
+    }, [busqueda]);
+
+    return {juegosBuscados, loading, error};
 }

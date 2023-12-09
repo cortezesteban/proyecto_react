@@ -6,7 +6,7 @@ import './ItemCount.css';
 
 export const ItemCount = ({ stock }) => {
 
-    const { setCount } = useContext(CartContext);
+    const { count, setCount } = useContext(CartContext);
     const [countItem, setCountItem] = useState(1);
 
     let items = [];
@@ -32,7 +32,7 @@ export const ItemCount = ({ stock }) => {
                     ))}
                 </Dropdown.Menu>
             </div>
-            <button type="submit" className='btnDetailStyle' onClick={() => setCount(countItem)}>Agregar al Carrito</button>
+            <button type="submit" className='btnDetailStyle' onClick={() => setCount(count + countItem)}>Agregar al Carrito</button>
         </Dropdown>
     )
 }

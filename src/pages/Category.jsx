@@ -1,6 +1,7 @@
 import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 import { useParams } from 'react-router-dom';
 import { useGamesByCategory } from "../hooks/useGames";
+import { LoaderComponent } from "../components/LoaderComponet/LoaderComponent";
 
 export const Category = () => {
 
@@ -11,7 +12,7 @@ export const Category = () => {
     return (
         <div>
             {loading ? (
-                <h1 className="text-white display-6 d-flex justify-content-center align-items-center">va snipet de carga</h1>
+                <LoaderComponent/>
             ) : error ? (
                 <div>Hubo un error</div>
             ) : (

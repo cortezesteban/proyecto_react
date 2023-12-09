@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer"
 import { useSingleGame } from "../hooks/useGames"
+import { LoaderComponent } from "../components/LoaderComponet/LoaderComponent"
 
 export const Item = () => {
 
@@ -12,7 +13,7 @@ export const Item = () => {
   return (
     <div>
       {loading ? (
-        <h1 className="text-white display-6 d-flex justify-content-center align-items-center">va snipet de carga</h1>
+        <LoaderComponent/>
       ) : error ? (
         <div>Hubo un error</div>
       ) : (
