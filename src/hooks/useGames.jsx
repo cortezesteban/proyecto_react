@@ -76,9 +76,14 @@ export const useSearchGames = (busqueda) => {
 
         getDocs(gamesCollection)
         .then((snapshot)=>{
-            setjuegosBuscados(
-                snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })).filter((e) => e.nombre.toLowerCase().includes(busqueda.toLowerCase()))
-            );
+            if(busqueda == 'todo'){
+                setjuegosBuscados(snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })));
+            }
+            else{
+                setjuegosBuscados(
+                    snapshot.docs.map(doc => ( {id: doc.id, ...doc.data() })).filter((e) => e.nombre.toLowerCase().includes(busqueda.toLowerCase()))
+                );
+            }
         })
         .then(() => setLoading(false))
         .catch((error) => setError(error));

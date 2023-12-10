@@ -17,7 +17,7 @@ export const NavLinkComponent = () => {
         if (busqueda.trim() !== '') {
             navigate(`/search/${busqueda}`);
         } else {
-            navigate(`/search/null`);
+            navigate(`/search/todo`);
         }
     }
 
