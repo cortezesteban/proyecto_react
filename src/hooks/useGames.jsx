@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import { obtenerJuegos } from "../services/apiJuegos";
-import { collection, getDocs, getFirestore, doc, getDoc, query, where, connectFirestoreEmulator } from 'firebase/firestore';
+import { collection, getDocs, getFirestore, doc, getDoc, query, where } from 'firebase/firestore';
 
 export const useAllGames = () => {
     const [listaJuegos, setListaJuegos] = useState([]);

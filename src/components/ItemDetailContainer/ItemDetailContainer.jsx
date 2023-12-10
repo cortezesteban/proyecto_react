@@ -1,4 +1,5 @@
 import { ItemCount } from '../ItemCountContainer/ItemCount';
+
 import './ItemDetailContainer.css';
 
 export const ItemDetailContainer = ({ juego }) => {

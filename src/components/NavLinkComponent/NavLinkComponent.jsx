@@ -1,8 +1,6 @@
-import React from 'react'
 import { useState } from 'react';
 import { Nav, NavDropdown, Form, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import './NavLinkComponent.css';
 
@@ -13,6 +11,8 @@ export const NavLinkComponent = () => {
     const navigate = useNavigate();
 
     const handleBusqueda = (e) => {
+
+        e.preventDefault();
 
         if (busqueda.trim() !== '') {
             navigate(`/search/${busqueda}`);

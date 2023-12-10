@@ -1,5 +1,6 @@
-import './ImageComponent.css';
 import { Link } from 'react-router-dom';
+
+import './ImageComponent.css';
 
 export const ImageComponent = ({juego}) => {
   return (

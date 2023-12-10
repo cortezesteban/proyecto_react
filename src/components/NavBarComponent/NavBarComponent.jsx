@@ -1,14 +1,13 @@
-import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import { Nav, Navbar } from 'react-bootstrap';
 import { NavLinkComponent } from '../NavLinkComponent/NavLinkComponent';
 import { Link } from 'react-router-dom';
-
+import { CartWidget } from '../CartWidget/CartWidget';
 import imagenLogo from '../../assets/img/logo_juego.png';
-import CartWidget from '../CartWidget/CartWidget';
+
 import './NavBarComponent.css';
 
-export const NavBarComponent = ({contador}) => {
+export const NavBarComponent = () => {
   return (
       <Navbar expand="lg" className="navBarStyle" data-bs-theme="dark">
           <Container fluid className="w-100">
@@ -27,7 +26,7 @@ export const NavBarComponent = ({contador}) => {
                                 <NavLinkComponent/>
                             </Col>
                             <Col sm={2} className='d-flex justify-content-end align-content-center cartMovileStyle'>
-                                <CartWidget contador={contador}/>
+                                <CartWidget/>
                             </Col>
                         </Row>
                     </Container>

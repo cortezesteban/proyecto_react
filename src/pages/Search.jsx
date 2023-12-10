@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams } from 'react-router-dom';
 import { useSearchGames } from '../hooks/useGames';
 import { LoaderComponent } from '../components/LoaderComponet/LoaderComponent';

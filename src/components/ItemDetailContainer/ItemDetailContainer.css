@@ -51,7 +51,7 @@
     margin-top: 20px;
 }
 
-.btnDetailStyle{
+/* .btnDetailStyle{
     border-radius: 8px;
     padding: 8px 30px;
     background: #31363a;
@@ -61,7 +61,7 @@
 
 .btnDetailStyle:hover{
     background: rgb(203, 140, 22);
-}
+} */
 
 .spanDetailStyle{
     color: rgb(35, 89, 101);

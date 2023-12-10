@@ -1,13 +1,14 @@
-import React from 'react'
 import { useContext, useState } from 'react';
 import { CartContext } from '../../context/cartContext';
+import { AddItemButton } from '../AddItemButtonComponent/AddItemButton';
 import Dropdown from "react-bootstrap/Dropdown";
+
 import './ItemCount.css';
 
 export const ItemCount = ({ stock }) => {
 
     const { count, setCount } = useContext(CartContext);
-    const [countItem, setCountItem] = useState(1);
+    const [ countItem, setCountItem ] = useState(1);
 
     let items = [];
 
@@ -17,6 +18,11 @@ export const ItemCount = ({ stock }) => {
 
     const handleCountItem = (e) => {
         setCountItem(e);
+    }
+
+    const handleCartCount = () => {
+        setCount(count + countItem);
+        setCountItem(1)
     }
 
     return (
@@ -32,7 +38,7 @@ export const ItemCount = ({ stock }) => {
                     ))}
                 </Dropdown.Menu>
             </div>
-            <button type="submit" className='btnDetailStyle' onClick={() => setCount(count + countItem)}>Agregar al Carrito</button>
+            <AddItemButton handleCartCount={handleCartCount}/>
         </Dropdown>
     )
 }

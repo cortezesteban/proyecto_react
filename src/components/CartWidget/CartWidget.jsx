@@ -1,10 +1,9 @@
-import React from 'react';
 import { useContext } from 'react';
 import { CartContext } from '../../context/cartContext';
 
 import './CartWidget.css';
 
- const CartWidget = () => {
+export const CartWidget = () => {
 
   const { count } = useContext(CartContext);
 
@@ -15,5 +14,3 @@ import './CartWidget.css';
     </div>
   )
 }
-
-export default CartWidget;

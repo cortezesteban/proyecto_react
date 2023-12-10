@@ -1,0 +1,11 @@
+.btnDetailStyle{
+    border-radius: 8px;
+    padding: 8px 30px;
+    background: #31363a;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnDetailStyle:hover{
+    background: rgb(203, 140, 22);
+}

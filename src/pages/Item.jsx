@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react"
 import { useParams } from 'react-router-dom'
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer"
 import { useSingleGame } from "../hooks/useGames"

@@ -1,6 +1,6 @@
-import React from 'react'
-import './ItemListContainer.css'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+import './ItemListContainer.css';
 
 export const ItemListContainer = ({ listaJuegos, genero }) => {
 
