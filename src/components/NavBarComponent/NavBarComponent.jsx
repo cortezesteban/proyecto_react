@@ -7,7 +7,7 @@ import imagenLogo from '../../assets/img/logo_juego.png';
 
 import './NavBarComponent.css';
 
-export const NavBarComponent = () => {
+export const NavBarComponent = ({ category }) => {
   return (
       <Navbar expand="lg" className="navBarStyle" data-bs-theme="dark">
           <Container fluid className="w-100">
@@ -23,7 +23,7 @@ export const NavBarComponent = () => {
                     <Container fluid>
                         <Row>
                             <Col sm={10} className='d-flex justify-content-center align-items-center navMovileStyle'>
-                                <NavLinkComponent/>
+                                <NavLinkComponent category={category}/>
                             </Col>
                             <Col sm={2} className='d-flex justify-content-end align-content-center cartMovileStyle'>
                                 <CartWidget/>
