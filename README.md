@@ -27,7 +27,6 @@ Documento
 |  imagenGrande  | `string` |  url a un recurso visual   |
 |  video         | `string` |  url a un recurso visual   |
 
-
 #### Nombre de Colleccion - category
 
 Colleccion con los distintos genero de juegos
@@ -36,7 +35,9 @@ Documento
 
 |   Name         | Type     | Description                |
 | :--------      | :------- | :------------------------- |
-|  category      | `string` |     tipo de categoria      |
+|  category      | `string` |     tipo de catogoria      |
+
+
 
 
 ## Authors
@@ -46,6 +47,7 @@ Esteban Cortez
 
 ## Installation
 
-npm install
-npm run dev
+- npm install
+
+- npm run dev
     
